@@ -2,3 +2,4 @@ Maps store values in increasing order. Unordered Maps don't have any ordering
 Map uses self balancing tress like Red Black Tress for it's implementation while Unordered Maps use Hash Tables
 Search Time in Maps in log(n) while in Unordered Maps in O(n) in worst case.
 Insertion & Deletion Time in Maps in log(n) + rebalance while in Unordered Maps it's same sa searching time.
+We can use only those data structures in Unordered maps whoes hash can be calculated internally like int, long, string because Unordered map uses hash function for stroing.
