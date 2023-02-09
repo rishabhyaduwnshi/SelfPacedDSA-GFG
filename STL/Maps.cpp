@@ -49,5 +49,15 @@ int main()
     
     cout<<endl;
     
-    //end function
+    //erase function
+    mapString.erase(3);
+    for(auto ittx : mapString)
+        cout<<ittx.first<<" "<<ittx.second<<endl;
+        
+    cout<<endl;
+        
+    //this will return an iterator pointing to 10 element, if 10th element is not present, this will return mapString.end
+    auto ittxy = mapString.find(10); 
+    if(ittxy == mapString.end())
+        cout<<"Element not present";        
 }   
