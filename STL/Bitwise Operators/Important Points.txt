@@ -1,0 +1,6 @@
+Important Facts about Bitwise Operators:
+The left shift and right shift operators cannot be used with negative numbers.
+The bitwise XOR operator is the most useful operator from technical interview perspective. We will see some very useful applications of the XOR operator later in the course.
+The bitwise operators should not be used in place of logical operators.
+The left-shift and right-shift operators are equivalent to multiplication and division by 2 respectively.
+The & operator can be used to quickly check if a number is odd or even. The value of expression (x & 1) would be non-zero only if x is odd, otherwise the value would be zero.
