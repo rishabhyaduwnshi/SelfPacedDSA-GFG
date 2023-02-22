@@ -54,3 +54,15 @@ int shipWithinDays(vector<int>& weights, int days)
         
         return answer;
     }
+
+
+
+/* Related Questions
+1. 1552 -> Magnetic Force between two balls
+2. 1482 -> Minimum number of days to make n Boquets
+3. 1954 -> Minimum Gardern perimiter to collect enough apples
+4. 875 -> Koko eating bananas
+5. Painters partition probelm
+6. Food Distribution problem
+*/
+
