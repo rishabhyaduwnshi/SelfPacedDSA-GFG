@@ -3,15 +3,24 @@ using namespace std;
 
 void bubbleSort(int array[], int length)
 {
+    bool flag;
     //since n-1 passes are to be done
     for(int i=0;i<length-1;i++)
     {
+        flag = false;
         //after evry ith iteration, one element gets sorted so n-1-i
         for(int j=0;j<length-1-i;j++)
         {
             if(array[j] > array[j+1])
-            swap(array[j],array[j+1]);
+            {
+                swap(array[j],array[j+1]);
+                flag = true;
+            }
         }
+        
+        //if no swapping done, then break as array is already sorted
+        if(flag == false)
+            break;
     }
 }
 
