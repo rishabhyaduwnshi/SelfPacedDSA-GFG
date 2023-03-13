@@ -1,17 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// in k passes, we get k sorted numbers in array
-// in genral, this performs n passes
-
 void bubbleSort(int array[], int length)
 {
-    for(int i=0;i<length;i++)
+    //since n-1 passes are to be done
+    for(int i=0;i<length-1;i++)
     {
-        for(int j=i+1;j<length;j++)
+        //after evry ith iteration, one element gets sorted so n-1-i
+        for(int j=0;j<length-1-i;j++)
         {
-            if(array[i] > array[j])
-            swap(array[i],array[j]);
+            if(array[j] > array[j+1])
+            swap(array[j],array[j+1]);
         }
     }
 }
